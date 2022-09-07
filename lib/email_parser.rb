@@ -4,6 +4,7 @@ class EmailAddressParser
     @emails = emails
   end
   def parse
+    # splits based on "," or "" and then only returns unique values
     @emails.split(/, | /).uniq
   end
 end
